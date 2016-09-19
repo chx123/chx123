@@ -1,0 +1,92 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>test</title>
+<style>
+/*css reset */
+body,p,div,ol,ul,li,dl,dt,dd,h1,h2,h3,h4,h5,h6,form,input,iframe,nav {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font: 14px Microsoft YaHei;
+} 
+a {
+    text-decoration: none; 
+} 
+ol,ul {
+    list-style: none;
+} 
+* {
+    outline: none;
+}
+.wrapper {
+    width: 500px;
+    margin: 100px auto;
+} 
+.d1 {
+    width: 100%;
+    height: 100px;
+    background: #0cf;
+    border-radius: 5px;
+    transition: .3s;
+}
+.d2 {
+    width: 100px;
+    height: 200px;
+    background: rgba(0,10,20,.6);
+    box-shadow: 2px 2px 10px #666;
+    border-radius: 3px;
+    color: #fff;
+    padding-top: 10px;
+    text-align: center;
+    position: fixed;
+    display: none;
+}
+.d2 a {
+    display: block;
+    width: 100%;
+    height: 30px;
+    font: 14px/30px Microsoft YaHei;
+    color: #fff;
+}
+.d2 a:hover {
+    background: #555;
+}
+.dd {
+    transform: scale(.3,1);
+}
+.btn1 {
+    width: 20%;
+    border: 1px solid #ddd;
+    background: #fafafa;
+    color: #888;
+    border-radius: 3px;
+    padding: 10px 20px;
+    display: block;
+    margin: 60px auto;
+}
+.btn1:hover {
+    background: #eee;
+    cursor: pointer;
+}
+</style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="d1"></div>
+        <button class="btn1">点击</button>
+
+    </div>
+<script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+<script>
+$(function () {
+    $('.btn1').click(function() {
+        alert('');
+    });
+})
+</script>
+</body>
+</html>
